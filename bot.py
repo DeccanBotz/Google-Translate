@@ -128,7 +128,13 @@ async def cb_data(bot, update):
             disable_web_page_preview=True
         )
     else:
-        await update.message.delete()
+        @Deccan.on_callback_query()
+async def translate_text(bot,update):
+  tr_text = update.message.reply_to_message.text
+  cbdata = update.data
+  translator = google_translator()
+  translated_text = translator.translate(tr_text,lang_tgt=cbdata)
+  await update.message.edit(translated_text)
 
 @Deccan.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
