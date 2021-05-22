@@ -78,44 +78,32 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('⚜ Channel ⚜', url='https://telegram.me/Deccan_Botz'),
         InlineKeyboardButton('⚜ Group ⚜', url='https://telegram.me/Deccan_Supportz'),
         InlineKeyboardButton('🗣 Feedback', url='https://telegram.me/ContactDCBot')
-        ],[
-        InlineKeyboardButton('⚙ Help', callback_data='help'),
-        InlineKeyboardButton('🤖 About', callback_data='about'),
-        InlineKeyboardButton('✖ Close', callback_data='close')
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🔙 Back', callback_data='home'),
-        InlineKeyboardButton('🤖 About', callback_data='about'),
-        InlineKeyboardButton('✖ Close', callback_data='close')
+        InlineKeyboardButton('⚜ Channel ⚜', url='https://telegram.me/Deccan_Botz'),
+        InlineKeyboardButton('⚜ Group ⚜', url='https://telegram.me/Deccan_Supportz'),
+        InlineKeyboardButton('🗣 Feedback', url='https://telegram.me/ContactDCBot')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🔙 Back', callback_data='home'),
-        InlineKeyboardButton('⚙ Help', callback_data='help'),
-        InlineKeyboardButton('✖ Close', callback_data='close')
+        InlineKeyboardButton('⚜ Channel ⚜', url='https://telegram.me/Deccan_Botz'),
+        InlineKeyboardButton('⚜ Group ⚜', url='https://telegram.me/Deccan_Supportz'),
+        InlineKeyboardButton('🗣 Feedback', url='https://telegram.me/ContactDCBot')
         ]]
     )
 DONATE_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('PayPal', url='https://paypal.me/MJ8506'),
         InlineKeyboardButton('cryptocurrency', url='https://bit.ly/2RkT8SD')
-        ],[
-        InlineKeyboardButton('🔙 Back', callback_data='home'),
-        InlineKeyboardButton('✖ Close', callback_data='close')
+        [[
+        InlineKeyboardButton('⚜ Channel ⚜', url='https://telegram.me/Deccan_Botz'),
+        InlineKeyboardButton('⚜ Group ⚜', url='https://telegram.me/Deccan_Supportz'),
+        InlineKeyboardButton('🗣 Feedback', url='https://telegram.me/ContactDCBot')
         ]]
     )
-@Deccan.on_callback_query()
-async def cb_data(bot, update):
-    if update.data == "home":
-        await update.message.edit_text(
-            text=START_TEXT.format(update.from_user.mention),
-            reply_markup=START_BUTTONS,
-            disable_web_page_preview=True
-        )
-    
 
 @Deccan.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
