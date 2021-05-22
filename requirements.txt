@@ -1,0 +1,4 @@
+Pyrogram
+TgCrypto
+google_trans_new
+requests
