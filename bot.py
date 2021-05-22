@@ -5,25 +5,18 @@ logger = logging.getLogger(__name__)
 
 import os
 from pyrogram import Client, filters
-from pyrogram.types import (
-    InlineKeyboardButton,
-    InlineKeyboardMarkup
-)
+from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup)
 from pyrogram.types import CallbackQuery
 from google_trans_new import google_translator
-
-
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-# Get a bot token from botfather
 TOKEN = os.environ.get("TOKEN", "")
 
-# Get from my.telegram.org (or @UseTGXBot)
 APP_ID = int(os.environ.get("APP_ID", ""))
 
-# Get from my.telegram.org (or @UseTGXBot)
 API_HASH = os.environ.get("API_HASH", "")
+
 Deccan = Client(
         "ggt",
         bot_token=TOKEN,api_hash=API_HASH,
