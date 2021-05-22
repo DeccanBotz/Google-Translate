@@ -1,7 +1,7 @@
 {
     "name": "Google Translater",
     "description": "This Bot can translate the text in supported languages",
-    "repository": "https://github.com/MJ8506/Google-Translate",
+    "repository": "https://github.com/DeccanBotz/Google-Translate",
     "logo": "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg" ,
     "keywords": ["Google Translater", "Deccan_Botz", "telegram bot"],
     "env": {
