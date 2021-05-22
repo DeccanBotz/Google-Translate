@@ -121,12 +121,14 @@ async def cb_data(bot, update):
             reply_markup=HELP_BUTTONS,
             disable_web_page_preview=True
         )
-    else update.data == "about":
+    elif update.data == "about":
         await update.message.edit_text(
             text=ABOUT_TEXT,
             reply_markup=ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
+    else:
+        await update.message.translate_text()
 
 @Deccan.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
