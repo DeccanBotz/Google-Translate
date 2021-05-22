@@ -38,18 +38,26 @@ def echo(client, message):
  
  keybord = InlineKeyboardMarkup( [
         [
-            InlineKeyboardButton("Hindi", callback_data='hi'),
-            InlineKeyboardButton("Kannada", callback_data='kn'),
-            InlineKeyboardButton("malayalam",callback_data ='ml')
+            InlineKeyboardButton("English", callback_data='en'),
+            InlineKeyboardButton("Tamil", callback_data='ta'),
+            InlineKeyboardButton("Telugu",callback_data='te')
         ],
-        [   InlineKeyboardButton("Tamil", callback_data='ta'),
-        InlineKeyboardButton("Telugu", callback_data='te'),
-        InlineKeyboardButton("English",callback_data = 'en')
+        [   InlineKeyboardButton("Hindi", callback_data='hi'),
+        InlineKeyboardButton("Kannada", callback_data='kn'),
+        InlineKeyboardButton("Malayalam",callback_data= 'ml')
         ],
-        	[InlineKeyboardButton("Urdu",callback_data ="ur"),
-	InlineKeyboardButton("Punjabi",callback_data="pa"),
-	InlineKeyboardButton("Spanish",callback_data="es")
-	]
+        [InlineKeyboardButton("Urdu", callback_data ='ur'),
+	InlineKeyboardButton("Punjabi", callback_data='pa'),
+	InlineKeyboardButton("Spanish", callback_data='es')
+	],
+        [InlineKeyboardButton("Korean", callback_data='ko'),
+         InlineKeyboardButton("Japanese", callback_data='ja'),
+         InlineKeyboardButton("Chinese", callback_data='zn-cn')
+        ],
+        [InlineKeyboardButton("Greek", callback_data='el'),
+         InlineKeyboardButton("Italian", callback_data='it'),
+         InlineKeyboardButton("Nepali", callback_data='ne')
+        ]
     ]
  
  )
