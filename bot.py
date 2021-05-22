@@ -98,7 +98,7 @@ DONATE_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('PayPal', url='https://paypal.me/MJ8506'),
         InlineKeyboardButton('cryptocurrency', url='https://bit.ly/2RkT8SD')
-        [[
+        ],[
         InlineKeyboardButton('⚜ Channel ⚜', url='https://telegram.me/Deccan_Botz'),
         InlineKeyboardButton('⚜ Group ⚜', url='https://telegram.me/Deccan_Supportz'),
         InlineKeyboardButton('🗣 Feedback', url='https://telegram.me/ContactDCBot')
