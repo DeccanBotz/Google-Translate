@@ -128,7 +128,7 @@ async def cb_data(bot, update):
             disable_web_page_preview=True
         )
     else:
-        await update.message.tr_text()
+        await update.message.google_translator()
 
 @Deccan.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
