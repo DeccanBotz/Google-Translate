@@ -23,15 +23,141 @@ Deccan = Client(
             api_id=APP_ID
     )
     
-@Deccan.on_message(filters.command(['start']))
-def start(client, message):
-            message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],
-                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]
-           ]
-        ) )
+START_TEXT = """
+Hello {}, 
+I am Google Translater bot ✌
+
+Send me a word/sentence. I will Translate it to you ✅
+
+Click help for more details..
+
+Made With ❤ By @Deccan_Botz 
+"""
+HELP_TEXT = """
+Hey, 
+It's not complicated 🤭
+
+Follow these steps..
+
+☛ Just send me a Word/Sentence/Paragraph.
+
+☛ Select the Language and I will translate it you!
+
+<b><u>Languages :-</u></b>
+
+English, Tamil, Telugu, Hindi, Kannada, Malayalam, Urdu, Punjabi, Spanish, Korean, Japanese, Chinese, Greek, Italian, Vietnamese, Nepali
+ 
+Made With ❤ By @Deccan_Botz
+"""
+ABOUT_TEXT = """
+⭕️<b>🤖 My Name : Google Translater Bot</b>
+
+⭕️<b>📝 Language :</b> <code>Python3</code>
+
+⭕️<b>📚 Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a>
+
+⭕️<b>📡 Hosted on :</b> <a href='https://heroku.com/'>Heroku</a>
+
+⭕️<b>👥 Support Group :</b> <a href='https://t.me/Deccan_Supportz'>Deccan Support</a>
+
+⭕️<b>📢 Updates Channel :</b> <a href='https://t.me/Deccan_Botz'>Deccan Bots</a>
+"""
+
+DONATE_TEXT = """❤ Thanks for Clicking Donate Command ❤
+
+The bot is free to use and always will be!
+But running this bot on server costs money, If you like this bot and want it to keep running, please support.
+
+To donate you can choose any of these options and send any amount that you wish.
+
+Made With ❤ By @Deccan_Botz
+"""
+
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('⚜ Channel ⚜', url='https://telegram.me/Deccan_Botz'),
+        InlineKeyboardButton('⚜ Group ⚜', url='https://telegram.me/Deccan_Supportz'),
+        InlineKeyboardButton('🗣 Feedback', url='https://telegram.me/ContactDCBot')
+        ],[
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('🤖 About', callback_data='about'),
+        InlineKeyboardButton('✖ Close', callback_data='close')
+        ]]
+    )
+HELP_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🔙 Back', callback_data='home'),
+        InlineKeyboardButton('🤖 About', callback_data='about'),
+        InlineKeyboardButton('✖ Close', callback_data='close')
+        ]]
+    )
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🔙 Back', callback_data='home'),
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('✖ Close', callback_data='close')
+        ]]
+    )
+DONATE_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('PayPal', url='https://paypal.me/MJ8506'),
+        InlineKeyboardButton('cryptocurrency', url='https://bit.ly/2RkT8SD')
+        ],[
+        InlineKeyboardButton('🔙 Back', callback_data='home'),
+        InlineKeyboardButton('✖ Close', callback_data='close')
+        ]]
+    )
+@Deccan.on_callback_query()
+async def cb_data(bot, update):
+    if update.data == "home":
+        await update.message.edit_text(
+            text=START_TEXT.format(update.from_user.mention),
+            reply_markup=START_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "help":
+        await update.message.edit_text(
+            text=HELP_TEXT,
+            reply_markup=HELP_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "about":
+        await update.message.edit_text(
+            text=ABOUT_TEXT,
+            reply_markup=ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
+    else:
+        await update.message.delete()
+
+@Deccan.on_message(filters.private & filters.command(["start"]))
+async def start(bot, update):
+    await update.reply_text(
+        text=START_TEXT.format(update.from_user.mention),
+        disable_web_page_preview=True,
+        reply_markup=START_BUTTONS
+    )
+@Deccan.on_message(filters.private & filters.command(["donate"]))
+async def donate(bot, update):
+    await update.reply_text(
+        text=DONATE_TEXT.format(update.from_user.mention),
+        disable_web_page_preview=True,
+        reply_markup=DONATE_BUTTONS
+    )
+@Deccan.on_message(filters.private & filters.command(["help"]))
+async def help(bot, update):
+    await update.reply_text(
+        text=HELP_TEXT.format(update.from_user.mention),
+        disable_web_page_preview=True,
+        reply_markup=HELP_BUTTONS
+    )
+@Deccan.on_message(filters.private & filters.command(["about"]))
+async def about(bot, update):
+    await update.reply_text(
+        text=ABOUT_TEXT.format(update.from_user.mention),
+        disable_web_page_preview=True,
+        reply_markup=ABOUT_BUTTONS
+    )
 	
 @Deccan.on_message(filters.text & filters.private )
 def echo(client, message):
