@@ -18,6 +18,8 @@ APP_ID = int(os.environ.get("APP_ID", ""))
 
 API_HASH = os.environ.get("API_HASH", "")
 
+OWNER = os.environ.get("OWNER","")
+
 Deccan = Client(
         "ggt",
         bot_token=TOKEN,api_hash=API_HASH,
@@ -40,27 +42,25 @@ Follow these steps..
 ☛ Select the Language and I will translate it you!
 
 <b><u>Languages :-</u></b>
-English, Tamil, Telugu, Hindi, Kannada, Malayalam, Korean, Japanese, Chinese, Greek, French, Russian, Arabic, Spanish, Italian
+English, Tamil, Telugu, Hindi, Kannada, Malayalam, Korean, Japanese, Chinese, Greek, French, Russian, Arabic, Spanish, Italian, Uzbek, Latin, Polish, Mongolian, Marathi, Khazak.
 """
 ABOUT_TEXT = """
-➠ **Bot : YouTube Downloader Bot**
+➠ **Bot : Google Translater Bot**
 
 ➠ **Language :** Python3
 
 ➠ **Server :** Heroku
 
-➠ **Updates Channel :** @Deccan_Botz
+➠ **Owner :** {Config.OWNER}
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel 🇮🇳', url='https://telegram.me/Deccan_Botz'),
         InlineKeyboardButton('Tutorial 📺', url='https://telegram.me/Deccan_Supportz')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel 🇮🇳', url='https://telegram.me/Deccan_Botz'),
         InlineKeyboardButton('Tutorial 📺', url='https://telegram.me/Deccan_Supportz')
         ]]
     )
@@ -110,13 +110,22 @@ def echo(client, message):
         [InlineKeyboardButton("Arabic", callback_data='ar'),
          InlineKeyboardButton("Spanish", callback_data='es'),
          InlineKeyboardButton("Italian", callback_data='it')
+        ],
+        [InlineKeyboardButton("Uzbek", callback_data='uz'),
+         InlineKeyboardButton("Latin", callback_data='la'),
+         InlineKeyboardButton("Polish", callback_data='po')
+        ],
+        [InlineKeyboardButton("Mongolian", callback_data='mn'),
+         InlineKeyboardButton("Marathi", callback_data='mr'),
+         InlineKeyboardButton("Kazakh", callback_data='kk')
         ]
+        
     ]
  
  )
 
  
- message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord)
+ message.reply_text("**Please Select language** 👇",reply_to_message_id = message.message_id, reply_markup = keybord)
     
     
 
