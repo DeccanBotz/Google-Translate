@@ -30,3 +30,5 @@ English,  Tamil,  Telugu,  Hindi,  Kannada,  Malayalam,  Urdu,  Punjabi,  Spanis
 
 [Deccan_Botz](https://t.me/Deccan_Botz)
 
+Special Thanks to [LnTechnical](https://telegram.me/lntechnical)
+
