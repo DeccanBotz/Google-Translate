@@ -15,7 +15,7 @@
             "description": "Your API_HASH from https://my.telegram.org/apps"
         },
         "OWNER": {
-            "description": "Your Username with @"
+            "description": "Your Username without @"
     },
     "buildpacks": [
         {
