@@ -25,6 +25,7 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
   </a>
 </p>
 ## Configs
+
 ---
 * `API_HASH` Your API Hash from my.telegram.org
 
@@ -36,7 +37,9 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeccanBotz/Google-Translate)
 
 ### Credits
+
 ---
+
 [Pyrogram](https://docs.pyrogram.org)
 
 [Deccan_Botz](https://t.me/Deccan_Botz)
