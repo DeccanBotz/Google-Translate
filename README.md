@@ -23,7 +23,9 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
     <img src="http://ForTheBadge.com/images/badges/made-with-python.svg">
   </a>
 </p>
+
 ### Configs
+
 * `API_HASH` Your API Hash from my.telegram.org
 
 * `API_ID` Your API ID from my.telegram.org
