@@ -51,7 +51,7 @@ ABOUT_TEXT = """
 
 ➠ **Server :** Heroku
 
-➠ **Owner :** {OWNER}
+➠ **Owner :** @{OWNER}
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
