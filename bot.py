@@ -18,7 +18,7 @@ APP_ID = int(os.environ.get("APP_ID", ""))
 
 API_HASH = os.environ.get("API_HASH", "")
 
-OWNER = int(os.environ.get("OWNER", ""))
+OWNER = os.environ.get("OWNER", "")
 
 Deccan = Client(
         "ggt",
