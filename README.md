@@ -3,7 +3,7 @@ A simple Google Tranlater Bot
 
 <b>Languages :</b>
 
-English,  Tamil,  Telugu,  Hindi,  Kannada,  Malayalam,  Urdu,  Punjabi,  Spanish,  Korean,  Japanese,  Chinese,  Greek,  Italian,  Nepali
+English, Tamil, Telugu, Hindi, Kannada, Malayalam, Korean, Japanese, Chinese, Greek, French, Russian, Arabic, Spanish, Italian, Uzbek, Latin, Polish, Mongolian, Marathi, Khazak.
 
  <img src = "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg">
 
