@@ -16,6 +16,7 @@
         },
         "OWNER": {
             "description": "Your Username without @"
+        }
     },
     "buildpacks": [
         {
