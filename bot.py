@@ -55,20 +55,18 @@ ABOUT_TEXT = """
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
-        [
-        InlineKeyboardButton('Owner 👨‍💻', url='https://telegram.me/{OWNER}')
-        ],
         [[
+        InlineKeyboardButton('Owner 👨‍💻', url='https://telegram.me/{OWNER}')
+        ],[
         InlineKeyboardButton('Tutorial 📺', url='https://telegram.me/Deccan_Supportz')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [
-        InlineKeyboardButton('Owner 👨‍💻', url='https://telegram.me/{OWNER}')
-        ],
         [[
+        InlineKeyboardButton('Owner 👨‍💻', url='https://telegram.me/{OWNER}')
+        ],[
         InlineKeyboardButton('Tutorial 📺', url='https://telegram.me/Deccan_Supportz')
-        ]]
+        ]
     )
 
 @Deccan.on_message(filters.private & filters.command(["start"]))
