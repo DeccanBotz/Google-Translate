@@ -14,7 +14,7 @@ English,  Tamil,  Telugu,  Hindi,  Kannada,  Malayalam,  Urdu,  Punjabi,  Spanis
 Please fork this repository & Don't import code
 Made with Python3
 (C) @Deccan Botz 
-Copyright permission under MIT License
+Copyright permission under GNU General Public License v3.0
 License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 ```
 
