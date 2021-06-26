@@ -42,7 +42,7 @@ Follow these steps..
 ☛ Select the Language and I will translate it you!
 
 <b><u>Languages :-</u></b>
-English, Tamil, Telugu, Hindi, Kannada, Malayalam, Korean, Japanese, Chinese, Greek, French, Russian, Arabic, Spanish, Italian, Uzbek, Latin, Polish, Mongolian, Marathi, Khazak.
+English, Tamil, Telugu, Hindi, Kannada, Malayalam, Korean, Japanese, Chinese, Greek, French, Russian, Arabic, Spanish, Italian, Uzbek, Latin, Polish, Mongolian, Marathi, Khazak, Myanmar, Indonesian, German
 """
 ABOUT_TEXT = """
 ➠ **Bot : Google Translater Bot**
