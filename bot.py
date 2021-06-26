@@ -102,21 +102,24 @@ def echo(client, message):
 
  keybord = InlineKeyboardMarkup( [
         [
-            InlineKeyboardButton("English", callback_data='en'),
-            InlineKeyboardButton("Tamil", callback_data='ta'),
-            InlineKeyboardButton("Telugu",callback_data='te')
+        InlineKeyboardButton("English", callback_data='en'),
+        InlineKeyboardButton("Tamil", callback_data='ta'),
+        InlineKeyboardButton("Telugu",callback_data='te')
         ],
-        [   InlineKeyboardButton("Hindi", callback_data='hi'),
+        [
+        InlineKeyboardButton("Hindi", callback_data='hi'),
         InlineKeyboardButton("Kannada", callback_data='kn'),
         InlineKeyboardButton("Malayalam",callback_data= 'ml')
         ],
-        [InlineKeyboardButton("Korean", callback_data='ko'),
-         InlineKeyboardButton("Japanese", callback_data='ja'),
-         InlineKeyboardButton("Chinese", callback_data='zn-cn')
+        [
+        InlineKeyboardButton("Korean", callback_data='ko'),
+        InlineKeyboardButton("Japanese", callback_data='ja'),
+        InlineKeyboardButton("Chinese", callback_data='zn-cn')
         ],
-        [InlineKeyboardButton("Greek", callback_data='el'),
-         InlineKeyboardButton("French", callback_data='fr'),
-         InlineKeyboardButton("Russian", callback_data='ru')
+        [
+        InlineKeyboardButton("Greek", callback_data='el'),
+        InlineKeyboardButton("French", callback_data='fr'),
+        InlineKeyboardButton("Russian", callback_data='ru')
         ],
         [InlineKeyboardButton("Arabic", callback_data='ar'),
          InlineKeyboardButton("Spanish", callback_data='es'),
