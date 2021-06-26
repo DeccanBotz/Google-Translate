@@ -129,6 +129,10 @@ def echo(client, message):
         [InlineKeyboardButton("Mongolian", callback_data='mn'),
          InlineKeyboardButton("Marathi", callback_data='mr'),
          InlineKeyboardButton("Kazakh", callback_data='kk')
+        ],
+        [InlineKeyboardButton("Myanmar", callback_data='my'),
+         InlineKeyboardButton("Indonesian", callback_data='id'),
+         InlineKeyboardButton("German", callback_data='de')
         ]
         
     ]
