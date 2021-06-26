@@ -7,7 +7,6 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup)
 from pyrogram.types import CallbackQuery
-from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from google_trans_new import google_translator
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
