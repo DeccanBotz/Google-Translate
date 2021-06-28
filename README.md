@@ -1,9 +1,9 @@
 # Google-Translate
 A simple Google Tranlater Bot which translates Text into Supported Languages.
-
- <img src = "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg"width="150" height="150">
-
-  <p align="center"> Made With ❤ By @Deccan_Botz</p>
+<p align="middle">
+ <img src = "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg" width="150" height="150">
+</p>
+  <b><p align="center">Made With ❤ By @Deccan_Botz**</p></b>
 
 
 ```
@@ -25,6 +25,8 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 * `API_HASH` Your API Hash from my.telegram.org
 
 * `API_ID` Your API ID from my.telegram.org
+
+* `OWNER` Your Username without '@'
 
 * `BOT_TOKEN` Your bot token from @BotFather
 
