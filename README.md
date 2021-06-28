@@ -33,7 +33,7 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeccanBotz/Google-Translate)
 
-### 👨‍💻Dev
+### 👨‍💻 Dev
 
 <p align="middle">
 <img src="https://telegra.ph/file/02196031aecc70af5cec4.jpg" width="150" height="150"><br>
