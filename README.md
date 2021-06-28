@@ -1,11 +1,7 @@
 # Google-Translate
-A simple Google Tranlater Bot 
+A simple Google Tranlater Bot which translates Text into Supported Languages.
 
-<b>Languages :</b>
-
-English, Tamil, Telugu, Hindi, Kannada, Malayalam, Korean, Japanese, Chinese, Greek, French, Russian, Arabic, Spanish, Italian, Uzbek, Latin, Polish, Mongolian, Marathi, Khazak.
-
- <img src = "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg">
+ <img src = "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg"width="150" height="150">
 
   <p align="center"> Made With ❤ By @Deccan_Botz</p>
 
@@ -35,9 +31,7 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeccanBotz/Google-Translate)
 
-### Dev
-
-👨‍💻 <b>DEV</b>
+### 👨‍💻Dev
 
 <p align="middle">
 <img src="https://telegra.ph/file/02196031aecc70af5cec4.jpg" width="150" height="150"><br>
