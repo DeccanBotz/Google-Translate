@@ -3,7 +3,7 @@ A simple Google Tranlater Bot which translates Text into Supported Languages.
 <p align="middle">
  <img src = "https://telegra.ph/file/73a6f6a32764f9795af3d.jpg" width="200" height="200">
 </p>
-  <b><p align="center">Made With ❤ By @Deccan_Botz**</p></b>
+  <b><p align="center">Made With ❤ By @Deccan_Botz</p></b>
 
 
 ```
