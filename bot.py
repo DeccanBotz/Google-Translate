@@ -152,7 +152,7 @@ async def translate_text(bot,update):
   cbdata = update.data
   translator = Translator()  
   translation = translator.translate(tr_text,dest=cb_data) 
-  await update.message.edit(translation.text))
+  await update.message.edit(translation.text)
   	
 
 Deccan.run()
