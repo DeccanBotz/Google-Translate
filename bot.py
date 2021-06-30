@@ -7,7 +7,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup)
 from pyrogram.types import CallbackQuery
-from google_trans_new import google_translator
+from googletrans import Translator
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
@@ -150,9 +150,9 @@ def echo(client, message):
 async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
   cbdata = update.data
-  translator = google_translator()
-  translated_text = translator.translate(tr_text,lang_tgt=cbdata)
-  await update.message.edit(translated_text)
+  translator = Translator()  
+  translation = translator.translate(tr_text,dest=cb_data) 
+  await update.message.edit(translation.text))
   	
 
 Deccan.run()
