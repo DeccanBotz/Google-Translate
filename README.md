@@ -31,6 +31,8 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 * `BOT_TOKEN` Your bot token from @BotFather
 
 ### Deploy to Heroku
+* [Tutorial](https://youtu.be/vuJ9K6ppxak)
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeccanBotz/Google-Translate)
 
 ### 👨‍💻 Dev
