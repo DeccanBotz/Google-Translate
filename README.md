@@ -52,3 +52,9 @@ License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
 [Deccan_Botz](https://t.me/Deccan_Botz)
 
 Special Thanks to [LnTechnical](https://telegram.me/lntechnical)
+
+### Follow us on 
+* Instagram : [deccan_botz](https://www.instagram.com/deccan_botz/)
+* Twitter   : [DeccanBotz](https://www.twitter.com/DeccanBotz/)
+* Github    : [DeccanBotz](https://github.com/DeccanBotz/)
+* YouTube   : [DC Tutorials](https://www.youtube.com/channel/UCt96T3IQs3sM7ZtthNz-tmA)
