@@ -11,7 +11,7 @@ Please fork this repository & Don't import code
 Made with Python3
 (C) @Deccan Botz 
 Copyright permission under GNU General Public License v3.0
-License -> https://github.com/MJ8506/Google-Translate/blob/main/LICENSE
+License -> https://github.com/DeccanBotz/Google-Translate/blob/main/LICENSE
 ```
 
 <p align="center">
