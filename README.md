@@ -35,16 +35,6 @@ License -> https://github.com/DeccanBotz/Google-Translate/blob/main/LICENSE
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DeccanBotz/Google-Translate)
 
-### 👨‍💻 Dev
-
-<p align="middle">
-<img src="https://telegra.ph/file/a9edce03d3a0ffd14ae65.jpg" width="200" height="250"><br>
-<img src="https://badgen.net/badge/Name/The Dark King/orange?icon=awesome&labelColor=black"></a>
-<a href="https://telegram.dog/DcBofficial"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
-<a href="https://github.com/DeccanBotz"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
-<a href="https://www.youtube.com/channel/UCt96T3IQs3sM7ZtthNz-tmA"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
-<p align="left">
-</p>
 
 ### Follow us on 
 
